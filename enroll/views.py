@@ -9,6 +9,6 @@ def studinfo(req):
       return render(req, 'enroll/student.html', {'student':student})
 
 def studentform(req):
-      fm = studentForm(auto_id=True, initial={'name':'shukumar'})
+      fm = studentForm(auto_id=True)
       # fm.order_fields(field_order=['email','name'])
       return render(req, 'enroll/forms.html',{'form':fm})
